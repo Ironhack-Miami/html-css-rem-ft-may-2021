@@ -13,55 +13,69 @@
       name="keywords"
       content="ux design, ui design, designer in miami, ironhack student"
     />
+    <style type="text/css">
+      h3 {
+        color: midnightblue;
+      }
+      h4 {
+        color: yellow;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Header - Start -->
     <header>
-      <img src="" alt="Logo">
-        <nav>
-          About Us
-          Products
-          Testimonials
-          Contact Us
-        </nav>
-        search icon
-        account icon
+      <img
+        src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg"
+        alt="Logo"
+      />
+      <nav>
+        <a href="#">About Us</a>
+        <a href="#">Products </a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact Us</a>
+      </nav>
+      search icon account icon
     </header>
     <!-- Header - End -->
 
     <!-- Hero - Start -->
-    <section>
+    <section id="hero">
       <h1>heading 1</h1>
       <h3>heading 3</h3>
-      call to action
+      <a href="#">call to action</a>
     </section>
     <!-- Hero - End -->
 
     <!-- Cards - Start -->
-    <section>
+    <section id="card">
       <!-- Card 1 - Start -->
-        <div>
-          <img src="" alt="">
-          <h4>title</h4>
-          <p>description</p>
-          call to action
-        </div>
+      <div>
+        <img src="https://source.unsplash.com/300x200/?coffee" alt="" />
+        <h4>title</h4>
+        <p>description</p>
+        <a href="#">call to action</a>
+      </div>
       <!-- Card 1 - End -->
       <!-- Card 2 - Start -->
-        <div>
-          <img src="" alt="">
-          <h4>title</h4>
-          <p>description</p>
-          call to action
-        </div>
+      <div>
+        <img src="https://source.unsplash.com/300x200/?coffee,mug" alt="" />
+        <h4>title</h4>
+        <p>description</p>
+        <a href="#">call to action</a>
+      </div>
       <!-- Card 2 - End -->
       <!-- Card 3 - Start -->
-        <div>
-          <img src="" alt="">
-          <h4>title</h4>
-          <p>description</p>
-          call to action
-        </div>
+      <div>
+        <img
+          src="https://source.unsplash.com/300x200/?coffee,breakfast"
+          alt=""
+        />
+        <h4>title</h4>
+        <p>description</p>
+        <a href="#">call to action</a>
+      </div>
       <!-- Card 3 - End -->
     </section>
     <!-- Cards - End -->
@@ -70,85 +84,105 @@
     <section>
       <h2>what people say</h2>
       <blockquote>I love this product and everything in this world.</blockquote>
-      <img src="" alt="user photo">
+      <img
+        src="https://source.unsplash.com/80x80/?person,portrait"
+        alt="user photo"
+      />
       <p>name</p>
     </section>
     <!-- Testimonials - End -->
 
     <!-- Features - Start -->
     <section>
-    <h2>Features of the product</h2>
+      <h2>Features of the product</h2>
       <!-- Feature 1 - Start -->
       <div>
-        <img src="" alt="">
-        <h4>title</h4> 
-        <p>description</p> 
+        <img src="https://source.unsplash.com/160x160/?sound" alt="" />
+        <h4>title</h4>
+        <p>description</p>
       </div>
       <!-- Feature 1 - End -->
       <!-- Feature 2 - Start -->
       <div>
-        <img src="" alt="">
-        <h4>title</h4> 
-        <p>description</p> 
+        <img src="https://source.unsplash.com/160x160/?speed" alt="" />
+        <h4>title</h4>
+        <p>description</p>
       </div>
       <!-- Feature 2 - End -->
       <!-- Feature 3 - Start -->
       <div>
-        <img src="" alt="">
-        <h4>title</h4> 
-        <p>description</p> 
+        <img src="https://source.unsplash.com/160x160/?sound,theraphy" alt="" />
+        <h4>title</h4>
+        <p>description</p>
       </div>
       <!-- Feature 3 - End -->
       <!-- Feature 4 - Start -->
       <div>
-        <img src="" alt="">
-        <h4>title</h4> 
-        <p>description</p> 
+        <img src="https://source.unsplash.com/160x160/?bottle,wine" alt="" />
+        <h4>title</h4>
+        <p>description</p>
       </div>
       <!-- Feature 4 - End -->
-  </section>
+    </section>
     <!-- Features - End -->
 
     <!-- Contact Us - Start -->
     <section>
-    contact us
-      address
-      phone
-      email
+      <div>
+        <h3>Contact Us</h3>
+        <p>
+          Address <br />
+          Miami, FL
+        </p>
+        <a href="tel:+5511999004400">Call Me</a>
+        <a href="mailto:juno@juno.pro">Email Me</a>
+      </div>
+      <div>
+        <label for="name">Type your name here</label>
+        <input type="text" id="name" placeholder="e.g. Carolina Teixeira" />
 
-      name
-      email
-      text
-      submit button
+        <label for="email">Type your email</label>
+        <input type="email" id="email" placeholder="steve@apple.com" />
+
+        <label for="message">Write your message</label>
+        <textarea
+          name=""
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Hello Dan."
+        ></textarea>
+
+        <input type="submit" value="Send This Message" />
+      </div>
     </section>
     <!-- Contact Us - End -->
 
     <!-- Footer - Start -->
     <footer>
-      <img src="" alt="Logo">
-      
-      links 
-        link1
-        link2
-        link3
-      
-      links 
-        link1
-        link2
-        link3
-       
-      follow us
-        instagram icon
-        linkedin icon
-        medium icon
-      </footer>
+      <img
+        src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg"
+        alt="Logo"
+      />
+      <div>
+        <h5>Company</h5>
+        <a href="#">About Us</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <a href="#">UX Design</a>
+        <a href="#">UI Design</a>
+        <a href="#">Web Dev</a>
+      </div>
+      <div>
+        <h5>Follow Us</h5>
+        <a href="#">instagram icon</a>
+        <a href="#">linkedin icon </a>
+        <a href="#">medium icon</a>
+      </div>
+    </footer>
     <!-- Footer - End -->
-
-
-
-      
-
-
-
   </body>
 </html>

@@ -1,23 +1,115 @@
-h1 {
-  color: green;
-}
-h4 {
-  color: red;
-}
-p {
-  color: lime;
+/* 
+font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
-/* section {
-  border: 2px red solid;
+body {
+  margin: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.768rem;
+  color: rgb(5, 5, 5);
+}
+h2 {
+  font-size: 3.815rem;
+}
+h3 {
+  font-size: 3.052rem;
+}
+h4 {
+  font-size: 2.441rem;
+  color: red;
+}
+h5 {
+  font-size: 1.953rem;
+}
+h6 {
+  font-size: 1.563rem;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  color: rgb(69, 69, 69);
+}
+
+header {
+  background-color: darksalmon;
+}
+section {
+  border: 2px red solid;
+  padding: 1.6rem;
+}
+/* 
 div {
   border: 2px yellow dashed;
 } */
 
+/* Links */
+a:link,
+a:visited {
+  text-decoration: none;
+  padding: 8px;
+  color: teal;
+}
+a:hover {
+  color: darkslateblue;
+}
+a:active {
+  color: gold;
+}
+/* CTA Button */
+a.cta-button:link,
+a.cta-button:visited {
+  background-color: orangered;
+  border-radius: 8px;
+  color: whitesmoke;
+  padding: 16px 24px;
+}
+a.cta-button:hover {
+  background-color: tomato;
+}
+a.cta-button:active {
+  background-color: darkred;
+}
+
+/* Classes */
+.card {
+  width: 200px;
+  background-color: cornsilk;
+}
+
+/* ID's */
 #hero {
   background-image: url('https://source.unsplash.com/1600x900/?nature,water');
   background-size: cover;
   height: 400px;
   text-align: center;
+}
+
+#cards {
+}
+
+#testimonials {
+  margin: 3rem;
+}
+
+#features {
+}
+
+#contact-us {
 }

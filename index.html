@@ -13,6 +13,7 @@
       name="keywords"
       content="ux design, ui design, designer in miami, ironhack student"
     />
+    <!-- Styles -->
     <style type="text/css">
       h3 {
         color: midnightblue;
@@ -22,6 +23,18 @@
       }
     </style>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header - Start -->
@@ -36,7 +49,9 @@
         <a href="#">Testimonials</a>
         <a href="#">Contact Us</a>
       </nav>
-      search icon account icon
+
+      <i class="ri-search-line ri-xl"></i>
+      <i class="ri-user-smile-line ri-xl"></i>
     </header>
     <!-- Header - End -->
 
@@ -44,14 +59,14 @@
     <section id="hero">
       <h1>heading 1</h1>
       <h3>heading 3</h3>
-      <a href="#">call to action</a>
+      <a href="#" class="cta-button">call to action</a>
     </section>
     <!-- Hero - End -->
 
     <!-- Cards - Start -->
-    <section id="card">
+    <section id="cards">
       <!-- Card 1 - Start -->
-      <div>
+      <div class="card">
         <img src="https://source.unsplash.com/300x200/?coffee" alt="" />
         <h4>title</h4>
         <p>description</p>
@@ -59,7 +74,7 @@
       </div>
       <!-- Card 1 - End -->
       <!-- Card 2 - Start -->
-      <div>
+      <div class="card">
         <img src="https://source.unsplash.com/300x200/?coffee,mug" alt="" />
         <h4>title</h4>
         <p>description</p>
@@ -67,7 +82,7 @@
       </div>
       <!-- Card 2 - End -->
       <!-- Card 3 - Start -->
-      <div>
+      <div class="card">
         <img
           src="https://source.unsplash.com/300x200/?coffee,breakfast"
           alt=""
@@ -81,7 +96,7 @@
     <!-- Cards - End -->
 
     <!-- Testimonials - Start -->
-    <section>
+    <section id="testimonials">
       <h2>what people say</h2>
       <blockquote>I love this product and everything in this world.</blockquote>
       <img
@@ -93,7 +108,7 @@
     <!-- Testimonials - End -->
 
     <!-- Features - Start -->
-    <section>
+    <section id="features">
       <h2>Features of the product</h2>
       <!-- Feature 1 - Start -->
       <div>
@@ -127,7 +142,7 @@
     <!-- Features - End -->
 
     <!-- Contact Us - Start -->
-    <section>
+    <section id="contact-us">
       <div>
         <h3>Contact Us</h3>
         <p>
@@ -178,9 +193,15 @@
       </div>
       <div>
         <h5>Follow Us</h5>
-        <a href="#">instagram icon</a>
-        <a href="#">linkedin icon </a>
-        <a href="#">medium icon</a>
+        <a href="https://www.instagram.com/junojo" target="_blank"
+          ><i class="ri-instagram-fill ri-xl"></i
+        ></a>
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><i class="ri-linkedin-fill ri-xl"></i
+        ></a>
+        <a href="https://www.medium.com/" target="_blank"
+          ><i class="ri-medium-fill ri-xl"></i
+        ></a>
       </div>
     </footer>
     <!-- Footer - End -->

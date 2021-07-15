@@ -30,6 +30,7 @@ h2 {
 }
 h3 {
   font-size: 3.052rem;
+  margin-bottom: 40px;
 }
 h4 {
   font-size: 2.441rem;
@@ -49,6 +50,18 @@ p {
 
 header {
   background-color: darksalmon;
+  height: 100px;
+  padding: 0 30px;
+  /* Flexbox properties */
+  justify-content: space-between;
+  align-items: center;
+}
+footer {
+  background-color: lavender;
+  height: 200px;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 section {
   border: 2px red solid;
@@ -58,6 +71,10 @@ section {
 div {
   border: 2px yellow dashed;
 } */
+blockquote {
+  font-size: 2rem;
+  color: lightcyan;
+}
 
 /* Links */
 a:link,
@@ -86,11 +103,55 @@ a.cta-button:hover {
 a.cta-button:active {
   background-color: darkred;
 }
+/* CTA Button Rounded */
+a.cta-button-rounded:link,
+a.cta-button-rounded:visited {
+  color: #131045;
+  background-color: white;
+  border: 3px solid #131045;
+  padding: 10px 20px;
+  border-radius: 100px;
+  box-shadow: 4px 4px 0 #131045;
+}
+a.cta-button-rounded:hover {
+  color: #2c29de;
+  border: 3px solid #2c29de;
+  box-shadow: 4px 4px 0 #2c29de;
+}
+a.cta-button-rounded:active {
+  color: #7bde29;
+  border: 3px solid #7bde29;
+  box-shadow: 4px 4px 0 #7bde29;
+}
+/* CV Button */
+a.cv-button:link,
+a.cv-button:visited {
+  padding: 8px 16px;
+  background-color: honeydew;
+  border-radius: 8px;
+  color: indigo;
+}
+a.cv-button:hover {
+  background-color: darkorange;
+  color: white;
+}
+a.cv-button:active {
+  background-color: violet;
+  color: white;
+}
 
 /* Classes */
+.container {
+  display: flex;
+}
 .card {
-  width: 200px;
+  width: 300px;
+  height: 400px;
   background-color: cornsilk;
+  border-radius: 24px;
+}
+.card > div {
+  margin: 16px;
 }
 
 /* ID's */
@@ -102,14 +163,30 @@ a.cta-button:active {
 }
 
 #cards {
+  justify-content: space-between;
 }
 
 #testimonials {
   margin: 3rem;
+  box-sizing: border-box;
+  background-color: cadetblue;
 }
 
 #features {
+  justify-content: space-between;
+}
+
+#features > div {
+  text-align: center;
 }
 
 #contact-us {
+  justify-content: space-around;
+}
+
+#contact-us > div:first-child {
+  width: 30%;
+}
+#contact-us > div:last-child {
+  width: 70%;
 }

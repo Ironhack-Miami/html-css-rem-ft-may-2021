@@ -67,7 +67,7 @@ footer {
   align-items: flex-start;
 }
 section {
-  border: 2px red solid;
+  /* border: 2px red solid; */
   padding: 1.6rem;
 }
 /* 
@@ -79,11 +79,19 @@ blockquote {
   color: lightcyan;
 }
 
+nav > a {
+  padding: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* Links */
 a:link,
 a:visited {
   text-decoration: none;
-  padding: 8px;
   color: teal;
 }
 a:hover {
@@ -143,6 +151,50 @@ a.cv-button:active {
   color: white;
 }
 
+/* Forms */
+input,
+textarea {
+  padding: 16px 24px;
+  margin: 8px 0;
+  border: 1px solid grey;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+input {
+  width: 250px;
+}
+input:focus,
+textarea:focus {
+  background-color: lightyellow;
+  outline: 0;
+}
+input[type='text'] {
+  background-image: url('../img/arrow-right-circle-line.png');
+  background-repeat: no-repeat;
+  background-position: 16px;
+  padding-left: 48px;
+}
+input[type='email'] {
+  background-image: url('../img/mail-line.png');
+  background-repeat: no-repeat;
+  background-position: 16px;
+  padding-left: 48px;
+}
+input[type='submit'] {
+  border: none;
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+}
+input[type='submit']:hover {
+  background-color: red;
+}
+textarea {
+  width: 250px;
+  height: 150px;
+  resize: none;
+}
+
 /* Classes */
 .container {
   display: flex;
@@ -192,4 +244,25 @@ a.cv-button:active {
 }
 #contact-us > div:last-child {
   width: 70%;
+}
+
+/* ------------- TABLET ------------- */
+@media only screen and (min-width: 680px) and (max-width: 767px) {
+  h1 {
+    color: crimson;
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  input[type='submit'] {
+    background-color: darkblue;
+  }
+}
+
+/* ------------- MOBILE ------------- */
+@media only screen and (max-width: 679px) {
+  h1 {
+    color: plum;
+  }
 }

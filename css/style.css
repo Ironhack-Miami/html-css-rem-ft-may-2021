@@ -48,6 +48,9 @@ p {
   color: rgb(69, 69, 69);
 }
 
+i {
+  vertical-align: middle;
+}
 header {
   background-color: darksalmon;
   height: 100px;
